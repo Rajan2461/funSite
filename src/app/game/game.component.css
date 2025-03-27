@@ -1,0 +1,31 @@
+.game-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .game-area {
+    width: 800px;
+    height: 400px;
+    background: lightblue;
+    margin: 0 auto;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .character {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    left: 100px;
+    transition: top 0.1s;
+  }
+  
+  .obstacle {
+    width: 30px;
+    height: 30px;
+    background: green;
+    position: absolute;
+  }
+  

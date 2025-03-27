@@ -1,0 +1,16 @@
+<div class="game-container">
+    <h1>🏴‍☠️ One Piece Runner ☁️</h1>
+    <p>Score: {{ score }}</p>
+  
+    <div class="game-area">
+      <div class="character" [style.top.px]="characterY"></div>
+  
+      <div *ngFor="let obs of obstacles" class="obstacle"
+        [style.left.px]="obs.x"
+        [style.top.px]="obs.y">
+      </div>
+    </div>
+  
+    <button *ngIf="gameOver" (click)="restartGame()">Restart</button>
+  </div>
+  
